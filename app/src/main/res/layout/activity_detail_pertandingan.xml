@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail.DetailPertandingan"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ln_pertandingan1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_namaclubpertandingan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama club"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="VS"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_namaclubpertandingan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama club"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/ln_pertandingan"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@+id/ln_pertandingan1">
+
+
+       <TextView
+           android:id="@+id/tv_skor"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:text="0"
+           android:textSize="30dp"
+           />
+
+       <TextView
+           android:id="@+id/tv_skor2"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:text="0"
+           android:textSize="30dp"
+           android:gravity="end"
+           />
+
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_detailpertandingan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Detail"
+        android:layout_below="@+id/ln_pertandingan"/>
+
+
+
+</RelativeLayout>
